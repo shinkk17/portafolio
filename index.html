@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Elias Pineda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Elias</div>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- HERO / BANNER -->
+        <section id="inicio" class="hero">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <img src="img/perfil.jpg" alt="Fotografía de Elias Pineda" class="foto-perfil">
+                    <p class="saludo">Bienvenido a mi portafolio</p>
+                    <h1>Hola, soy Elias Pineda</h1>
+                    <h2>Profesor de informática y desarrollador de software</h2>
+                    <p class="descripcion-hero">
+                        Desarrollo soluciones web y aplicaciones utilizando diferentes tecnologías orientadas a resolver
+                        necesidades reales.
+                    </p>
+                    <div class="hero-botones">
+                        <a href="#proyectos" class="btn">Ver proyectos</a>
+                        <a href="#contacto" class="btn btn-secundario">Contactarme</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section id="sobre-mi" class="section">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Sobre mí</h2>
+                <p class="subtitulo-seccion">Conoce un poco más sobre mi trayectoria, pasión por la enseñanza y
+                    desarrollo tecnológico.</p>
+
+                <div class="sobre-mi-container">
+                    <div class="sobre-mi-texto">
+                        <h3>¿Quién soy?</h3>
+                        <p>
+                            Apasionado por la tecnología y la educación. Me dedico a la enseñanza de las ciencias de la
+                            computación y al desarrollo de software accesible, enfocado en resolver problemas prácticos
+                            mediante la programación.
+                        </p>
+                        <p>
+                            Mi objetivo es seguir construyendo proyectos con impacto social y guiar a nuevas
+                            generaciones de estudiantes en el área de la informática.
+                        </p>
+                    </div>
+
+                    <div class="datos-personales">
+                        <div class="dato">
+                            <strong>Nombre:</strong>
+                            <span>Elias Pineda</span>
+                        </div>
+                        <div class="dato">
+                            <strong>Perfil:</strong>
+                            <span>Desarrollador & Educador</span>
+                        </div>
+                        <div class="dato">
+                            <strong>Ubicación:</strong>
+                            <span>San José, Costa Rica</span>
+                        </div>
+                        <div class="dato">
+                            <strong>Correo electrónico:</strong>
+                            <span>contacto@eliaspineda.dev</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HABILIDADES -->
+                <div class="habilidades-container">
+                    <h3>Tecnologías y Habilidades</h3>
+                    <div class="habilidades">
+                        <span>HTML5 & CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>SQL Server</span>
+                        <span>Git & GitHub</span>
+                        <span>Docencia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="section section-gray">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Proyectos destacados</h2>
+                <p class="subtitulo-seccion">Algunos de los trabajos y aplicaciones desarrolladas recientemente.</p>
+
+                <div class="proyectos-container">
+                    <!-- Proyecto 1 -->
+                    <article class="proyecto">
+                        <div class="proyecto-imagen">
+                            <img src="img/proyecto1.jpg" alt="Plataforma Educativa">
+                        </div>
+                        <div class="proyecto-contenido">
+                            <span class="proyecto-categoria">Educación Web</span>
+                            <h3>Plataforma Educativa</h3>
+                            <p>Sistema web interactivo para la gestión de tareas, clases y retroalimentación entre
+                                profesores y estudiantes.</p>
+                            <div class="proyecto-tecnologias">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <button type="button" onclick="verProyecto('Mediacion Virtual')">Ver más detalles</button>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="proyecto">
+                        <div class="proyecto-imagen">
+                            <img src="img/proyecto1.jpg" alt="Gestor de Inventario">
+                        </div>
+                        <div class="proyecto-contenido">
+                            <span class="proyecto-categoria">Desktop / BD</span>
+                            <h3>Gestor de Inventario</h3>
+                            <p>Aplicación de escritorio para el control eficiente de stock y generación de reportes con
+                                base de datos.</p>
+                            <div class="proyecto-tecnologias">
+                                <span>Java</span>
+                                <span>SQL Server</span>
+                            </div>
+                            <button type="button" onclick="verProyecto('Gestor Inventario')">Ver más detalles</button>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="proyecto">
+                        <div class="proyecto-imagen">
+                            <img src="img/proyecto1.jpg" alt="Sitio Web Institucional">
+                        </div>
+                        <div class="proyecto-contenido">
+                            <span class="proyecto-categoria">Diseño Web</span>
+                            <h3>Sitio Web Institucional</h3>
+                            <p>Diseño y desarrollo de sitio web adaptable con arquitectura limpia, alto rendimiento y
+                                buenas prácticas accesibles.</p>
+                            <div class="proyecto-tecnologias">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Flexbox</span>
+                            </div>
+                            <button type="button" onclick="verProyecto('Sitio Institucional')">Ver más detalles</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Contáctenos</h2>
+                <p class="subtitulo-seccion">¿Tienes alguna consulta o propuesta de proyecto? Envíame un mensaje.</p>
+
+                <div class="contacto-container">
+                    <div class="contacto-info">
+                        <h3>Información de contacto</h3>
+                        <p>Si deseas comunicarte directamente, puedes escribirme por los siguientes medios:</p>
+
+                        <div class="contacto-dato">
+                            <strong>Correo electrónico:</strong>
+                            <span>contacto@eliaspineda.dev</span>
+                        </div>
+
+                        <div class="contacto-dato">
+                            <strong>Ubicación:</strong>
+                            <span>San José, Costa Rica</span>
+                        </div>
+
+                        <div class="contacto-dato">
+                            <strong>Horario de atención:</strong>
+                            <span>Lunes a Viernes (8:00 AM - 5:00 PM)</span>
+                        </div>
+                    </div>
+
+                    <form id="formContacto" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+
+            <p>
+                <span>
+                    &copy; 2026 Elias Pineda - Todos los derechos reservados.
+                </span>
+
+            </p>
+            <p>Escríbanos a: <strong>contacto@eliaspineda.dev</strong></p>
+        </div>
+    </footer>
+
+    <!-- Importando JS a proyecto -->
+    <script src="js/script.js"> </script>
+
+</body>
+
+</html>
